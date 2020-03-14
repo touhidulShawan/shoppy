@@ -20,6 +20,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  text-transform: uppercase;
 
   &:nth-child(5) {
     grid-column: span 2;

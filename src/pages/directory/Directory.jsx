@@ -44,6 +44,9 @@ const Container = styled.div`
 
   @media screen and (max-width: 765px) {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(3, 300px);
+  }
+  @media screen and (max-width: 548px) {
     grid-template-rows: repeat(5, 300px);
   }
 `;
