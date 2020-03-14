@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 
 import winterImg from "../../assets/img/winter.jpg";
 import springImg from "../../assets/img/spring.jpg";
@@ -10,29 +10,29 @@ import styled from "styled-components";
 import MenuItem from "../../components/menu-item/MenuItem";
 
 export default class Directory extends Component {
-  constructor(props) {
-    super(props);
+    constructor(props) {
+        super(props);
 
-    this.state = {
-      menuItemData: [
-        { id: "#1", title: "winter", image: winterImg },
-        { id: "#2", title: "spring", image: springImg },
-        { id: "#3", title: "summer", image: summerImg },
-        { id: "#4", title: "baby collection", image: babyImg },
-        { id: "#5", title: "man collection", image: manImg }
-      ]
-    };
-  }
+        this.state = {
+            menuItemData: [
+                {id: "#1", title: "winter", pagePath: "winter", image: winterImg},
+                {id: "#2", title: "spring", pagePath: "spring", image: springImg},
+                {id: "#3", title: "summer", pagePath: "summer", image: summerImg},
+                {id: "#4", title: "baby collection", pagePath: "baby-collections", image: babyImg},
+                {id: "#5", title: "man collection", pagePath: "man-collections", image: manImg}
+            ]
+        };
+    }
 
-  render() {
-    const menuItems = this.state.menuItemData.map(data => {
-      return (
-        <MenuItem key={data.id} imgSrc={data.image} menuTitle={data.title} />
-      );
-    });
+    render() {
+        const menuItems = this.state.menuItemData.map(data => {
+            return (
+                <MenuItem key={data.id} imgSrc={data.image} pagePath={data.pagePath} menuTitle={data.title}/>
+            );
+        });
 
-    return <Container>{menuItems}</Container>;
-  }
+        return <Container>{menuItems}</Container>;
+    }
 }
 
 const Container = styled.div`
