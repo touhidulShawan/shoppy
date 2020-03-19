@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
+import { NavLink } from "react-router-dom";
 
 import cartIcon from "../../icons/shopping_cart.svg";
 
@@ -12,19 +13,19 @@ function Navbar() {
         </div>
         <ul className="nav__ul">
           <li className="nav__item">
-            <a href="/" className="nav__link">
+            <NavLink to="/" className="nav__link">
               home
-            </a>
+            </NavLink>
           </li>
           <li className="nav__item">
-            <a href="/" className="nav__link">
-              about
-            </a>
+            <NavLink to="/shop" className="nav__link">
+              shop
+            </NavLink>
           </li>
           <li className="nav__item">
-            <a href="/" className="nav__link">
+            <NavLink to="/signin" className="nav__link">
               sign in
-            </a>
+            </NavLink>
           </li>
           <li>
             <div className="cart">
