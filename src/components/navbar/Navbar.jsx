@@ -13,17 +13,32 @@ function Navbar() {
         </div>
         <ul className="nav__ul">
           <li className="nav__item">
-            <NavLink to="/" className="nav__link">
+            <NavLink
+              exact
+              activeClassName="activeNavLink"
+              to="/"
+              className="nav__link"
+            >
               home
             </NavLink>
           </li>
           <li className="nav__item">
-            <NavLink to="/shop" className="nav__link">
+            <NavLink
+              exact
+              activeClassName="activeNavLink"
+              to="/shop"
+              className="nav__link"
+            >
               shop
             </NavLink>
           </li>
           <li className="nav__item">
-            <NavLink to="/signin" className="nav__link">
+            <NavLink
+              exact
+              activeClassName="activeNavLink"
+              to="/signin"
+              className="nav__link"
+            >
               sign in
             </NavLink>
           </li>
