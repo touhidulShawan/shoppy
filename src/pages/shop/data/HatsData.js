@@ -5,11 +5,11 @@ import hatImage4 from "../../../assets/img/Hats/hat_four.jpg";
 import hatImage5 from "../../../assets/img/Hats/hat_five.jpg";
 
 const HatData = [
-  { id: "ht1", title: "Hat-I", productImg: hatImage1 },
-  { id: "ht2", title: "Hat-II", productImg: hatImage2 },
-  { id: "ht3", title: "Hat-III", productImg: hatImage3 },
-  { id: "ht4", title: "Hat-IV", productImg: hatImage4 },
-  { id: "ht5", title: "Hat-V", productImg: hatImage5 }
+  { id: "ht1", title: "Hat-I", price: "$20", productImg: hatImage1 },
+  { id: "ht2", title: "Hat-II", price: "$25", productImg: hatImage2 },
+  { id: "ht3", title: "Hat-III", price: "$30", productImg: hatImage3 },
+  { id: "ht4", title: "Hat-IV", price: "$35", productImg: hatImage4 },
+  { id: "ht5", title: "Hat-V", price: "$40", productImg: hatImage5 }
 ];
 
 export default HatData;
