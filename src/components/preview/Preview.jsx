@@ -11,12 +11,7 @@ function Preview(props) {
           console.log(data);
           return (
             <Content key={data.id}>
-              <img
-                width="100%"
-                height="100%"
-                src={data.productImg}
-                alt="Product-img"
-              />
+              <img src={data.productImg} alt="Product-img" />
               <ProductFooter>
                 <ProductName>{data.title}</ProductName>
                 <ProductPrice>{data.price}</ProductPrice>
@@ -34,6 +29,11 @@ export default Preview;
 const Container = styled.div`
   padding: 1rem;
   margin: 1.3rem 0.8rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 const Header = styled.h1`
@@ -70,6 +70,10 @@ const Content = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0.85;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 `;
 
