@@ -30,17 +30,18 @@ export default class Directory extends Component {
 }
 
 const Container = styled.div`
+  height: 85vh;
   margin: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 250px 300px;
+  grid-template-rows: 250px 1fr;
   gap: 1rem;
 
   @media screen and (max-width: 765px) {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: repeat(3, 300px);
+    grid-template-rows: repeat(3, 1fr);
   }
   @media screen and (max-width: 548px) {
-    grid-template-rows: repeat(5, 300px);
+    grid-template-rows: repeat(5, 1fr);
   }
 `;

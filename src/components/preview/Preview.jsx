@@ -8,7 +8,6 @@ function Preview(props) {
       <Header>{props.title}</Header>
       <ItemContainer>
         {props.contents.map(data => {
-          console.log(data);
           return (
             <Content key={data.id}>
               <img src={data.productImg} alt="Product-img" />
