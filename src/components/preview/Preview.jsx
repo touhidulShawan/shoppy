@@ -26,6 +26,8 @@ function Preview(props) {
 
 export default Preview;
 
+// styled component
+
 const Container = styled.div`
   padding: 1rem;
   margin: 1.3rem 0.8rem;
