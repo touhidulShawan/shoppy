@@ -1,0 +1,18 @@
+$bg-color: #e3fff6;
+$main-color: #454545;
+
+.form__input-group {
+  margin: 2.8rem 0;
+}
+
+.input-field {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  outline: none;
+  border: none;
+  background: $bg-color;
+  font-size: 1.7rem;
+  letter-spacing: 0.25rem;
+  color: $main-color;
+  border-left: 3px solid $main-color;
+}

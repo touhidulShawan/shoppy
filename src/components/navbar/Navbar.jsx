@@ -36,7 +36,7 @@ function Navbar() {
             <NavLink
               exact
               activeClassName="activeNavLink"
-              to="/signin"
+              to="/signIn"
               className="nav__link"
             >
               sign in
