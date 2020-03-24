@@ -3,7 +3,7 @@ $light-black: #343434;
 $secondary-color: #4b8669;
 
 .signIn {
-  width: 30vw;
+  width: 35vw;
 }
 
 h2 {
@@ -16,4 +16,10 @@ span {
   color: $gray;
   font-size: 1.7rem;
   margin: 1rem 0;
+}
+
+.btn__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }

@@ -4,6 +4,8 @@ import "./SignIn.scss";
 import FormInput from "../form-input/FormInput";
 import Btn from "../btn/Btn";
 
+import { signWithGoogle } from "../../firebase/firebase-utils";
+
 class SignIn extends Component {
   constructor(props) {
     super(props);
@@ -53,7 +55,10 @@ class SignIn extends Component {
             onChange={this.handleChange}
             placeholder="Password"
           />
-          <Btn type="submit">sign in</Btn>
+          <div className="btn__container">
+            <Btn type="submit">sign in</Btn>
+            <Btn onClick={signWithGoogle}>sign in with google</Btn>
+          </div>
         </form>
       </div>
     );
