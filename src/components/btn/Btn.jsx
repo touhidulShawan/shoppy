@@ -1,10 +1,10 @@
 import React from "react";
 import "./Btn.scss";
 
-function Btn({ ...props }) {
+function Btn({ children, ...props }) {
   return (
     <button className="btn" {...props}>
-      {props.title}
+      {children}
     </button>
   );
 }

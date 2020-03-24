@@ -5,12 +5,12 @@ $color: #343434;
 .btn {
   background: $bg;
   color: $color;
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding: 1.3rem 2.5rem;
   border: none;
   outline: none;
   cursor: pointer;
-  text-transform: capitalize;
+  text-transform: uppercase;
   letter-spacing: 0.15rem;
   transition: letter-spacing 300ms ease-out;
 
