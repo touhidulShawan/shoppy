@@ -5,16 +5,17 @@ $color: #343434;
 .btn {
   background: $bg;
   color: $color;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   padding: 1.3rem 2.5rem;
   border: none;
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
-  transition: letter-spacing 300ms ease-out;
+  transition: all 300ms ease-out;
 
   &:hover {
-    letter-spacing: 0.35rem;
+    background: $color;
+    color: $bg;
   }
 }
