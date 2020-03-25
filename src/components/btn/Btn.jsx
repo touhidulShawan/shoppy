@@ -1,9 +1,12 @@
 import React from "react";
 import "./Btn.scss";
 
-function Btn({ children, ...props }) {
+function Btn({ children, isGoogleSignIn, ...props }) {
   return (
-    <button className="btn" {...props}>
+    <button
+      className={`${isGoogleSignIn ? "google-signIn-btn" : ""} btn`}
+      {...props}
+    >
       {children}
     </button>
   );

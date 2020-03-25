@@ -4,7 +4,9 @@ import { NavLink } from "react-router-dom";
 
 import cartIcon from "../../icons/shopping_cart.svg";
 
-function Navbar() {
+import { auth } from "../../firebase/firebase-utils";
+
+function Navbar({ currentUser }) {
   return (
     <nav className="nav">
       <div className="nav__container">
@@ -33,14 +35,20 @@ function Navbar() {
             </NavLink>
           </li>
           <li className="nav__item">
-            <NavLink
-              exact
-              activeClassName="activeNavLink"
-              to="/signIn"
-              className="nav__link"
-            >
-              sign in
-            </NavLink>
+            {currentUser ? (
+              <span className="nav__link" onClick={() => auth.signOut()}>
+                Sign out
+              </span>
+            ) : (
+              <NavLink
+                exact
+                activeClassName="activeNavLink"
+                to="/signIn"
+                className="nav__link"
+              >
+                sign in
+              </NavLink>
+            )}
           </li>
           <li>
             <div className="cart">

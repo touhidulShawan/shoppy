@@ -1,7 +1,8 @@
 // $bg: #a1c2cc;
 $bg: #fdd1ce;
 $color: #343434;
-
+$googleBG: #367dd9;
+$white: #fff;
 .btn {
   background: $bg;
   color: $color;
@@ -18,4 +19,9 @@ $color: #343434;
     background: $color;
     color: $bg;
   }
+}
+
+.google-signIn-btn {
+  background: $googleBG;
+  color: $white;
 }
